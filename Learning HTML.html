@@ -8,9 +8,24 @@
 		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 		
 		<style>
+			body, html{
+				height: 100%;
+			}
+			
+			a{
+				text-decoration: none;
+				/*pretty up the font both size and style*/
+				color: green;
+			}
+			
 			.header{
 				text-align: right;
+				word-spacing: 30px;
 				background-color: lightblue;
+				height: 10%;
+				padding: 2% 3%;
+				width: 100%;
+				box-sizing: border-box;
 			}
 			
 			.shadow{
@@ -43,11 +58,9 @@
 	<body>
 	
 		<header class = "header">
-			<a href = "My Story.html">Background</a> <a href = "#timeline">Timeline</a> <a href = "Current Resume.pdf" target = "_blank">Resume</a>
-			</br>
-			</br>
-			</br>
-			</br>
+			<a href = "My Story.html">Background</a> 
+			<a href = "#timeline">Timeline</a> 
+			<a href = "Current Resume.pdf" target = "_blank">Resume</a>
 		</header>
 		
 		<h1 class = "shadow">This page is dedicated to learning/re-learning HTML</h1>
@@ -151,9 +164,11 @@
 			<ul>
 				<li>Added semantic header tag and linked another html page to it</li>
 				<li>Linked footer to the header and removed original paragraph that did the same thing</li>
-				<li>Added Resume and linked it in header</li>				
+				<li>Added Resume and linked it in header</li>
+				<li>Just found out commenting in CSS is /**/. I'm feeling pretty dumb right now</li>
+				<li>Removed text-decoration from links and changed default color to green</li>
 			</ul>
-						
+			</br>
 		</footer>
 		
 	</body>
