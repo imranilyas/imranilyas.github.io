@@ -10,17 +10,30 @@
 		<style>
 			body, html{
 				height: 100%;
+				background-color: #FFFDD0; /*cream color*/
 			}
 			
 			a{
 				text-decoration: none;
-				/*pretty up the font both size and style*/
 				color: green;
+			}
+			
+			footer{
+				text-align: center;
+				color: white;
+				background-color: black;
+				height: 10%;
+				padding: 2% 3%;
+				width: 100%;
+				box-sizing: border-box;
 			}
 			
 			.header{
 				text-align: right;
-				word-spacing: 30px;
+				word-spacing: 16px;
+				font-family: arial;
+				font-weight: bold;
+				font-size: 14pt;
 				background-color: lightblue;
 				height: 10%;
 				padding: 2% 3%;
@@ -38,19 +51,32 @@
 				color: red;
 			}
 			
+			.timeline{
+				font-family: 'Indie Flower', cursive;
+				font-size: 14pt;
+				padding-left: 20%;
+				padding-right: 20%;
+				width: 100%;
+				box-sizing: border-box;
+			}
+			
 			#congrats{
 				color: #00FFFF;
 				text-shadow: 1pt 0pt 20pt black;
 				background: url("https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/party-popper.png") center;
 				font-size: 64pt;
 				text-align: center;
-
+				width: 100%;
 			}
 			
-			footer > p{
-				font-family: 'Indie Flower', cursive;
-				font-size: 16pt;
+			.timeline > p{
+				font-size: 18pt;
 			}
+			
+			h2{
+				text-align: center;
+			}
+			
 		</style>
 		
 	</head>
@@ -58,9 +84,9 @@
 	<body>
 	
 		<header class = "header">
-			<a href = "My Story.html">Background</a> 
-			<a href = "#timeline">Timeline</a> 
-			<a href = "Current Resume.pdf" target = "_blank">Resume</a>
+			<a class = "nav" href = "My Story.html">Background</a> 
+			<a class = "nav" href = "#timeline">Timeline</a> 
+			<a class = "nav" href = "Current Resume.pdf" target = "_blank">Resume</a>
 		</header>
 		
 		<h1 class = "shadow">This page is dedicated to learning/re-learning HTML</h1>
@@ -93,13 +119,13 @@
 		</br>
 		<p>I figure I should start tracking my progress so I can see how far I've come later down the line. Plus, it'll be fun.</p>
 
-		<footer id = "timeline">
+		<div class = "timeline">
 			
 			<h2>Timeline</h2>
 					
 			<p>Date: 01/13/2021</p>
 			<ul>
-				<li>Created new html called learning html</li>
+				<li>Created new HTML file called Learning HTML</li>
 				<li>Made Unordered list and added footer semantic tag</li>
 			</ul>
 			
@@ -169,7 +195,27 @@
 				<li>Just found out commenting in CSS is /**/. I'm feeling pretty dumb right now</li>
 				<li>Removed text-decoration from links and changed default color to green</li>
 			</ul>
+			
+			<p>Date: 02/06/2021</p>
+			<ul>
+				<li>Added font-family: arial to header</li>
+				<li>Font-weight: bold to header</li>
+			</ul>
+			
+			<p>Date: 02/07/2021</p>
+			<ul>
+				<li>Switched original footer to div and use class selector for its style</li>
+				<li>New footer with style</li>
+				<li>Background-color to body is cream</li>
+				<li>Add parent-child selector (.timeline > p) so dates are larger</li>
+				<li>Padding to timeline div</li>
+			</ul>
+			
 			</br>
+		</div>
+		
+		<footer>
+			Brought to you by Imran Ilyas.
 		</footer>
 		
 	</body>
