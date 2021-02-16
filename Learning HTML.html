@@ -35,9 +35,6 @@
 				box-sizing: border-box;
 			}
 			
-			header{
-			}
-			
 			nav{
 				font-family: arial;
 				font-weight: bold;
@@ -61,8 +58,8 @@
 				float: left;
 			}
 			
-			.white{
-				color: white;
+			.yellow{
+				color: yellow;
 			}
 			
 			.shadow{
@@ -100,8 +97,10 @@
 				text-align: center;
 			}
 			
-			#beach{
-				background: url("https://atlantis.nyc3.digitaloceanspaces.com/media/legacy/atlantis/Things_To_Do/Water_Park/Beaches/Hero/Experiences_Beach.jpg") center;
+			#header{
+				//(beach)background: url("https://atlantis.nyc3.digitaloceanspaces.com/media/legacy/atlantis/Things_To_Do/Water_Park/Beaches/Hero/Experiences_Beach.jpg") center;
+				//(checkers)background: url("https://i.ytimg.com/vi/Lq6TQHm2z-4/maxresdefault.jpg") center;
+				background-color: #00FFFF;
 				width: 100%;
 				top: 0;
 			}
@@ -116,13 +115,20 @@
 				weight: 250px;
 			}
 			
+			.subheader{
+				text-align: center;
+				color: blue;
+				font-size: 40pt;
+				font-family: 'Indie Flower', cursive;
+			}
+			
 		</style>
 		
 	</head>
 	
 	<body>
 	
-		<header id = "beach">
+		<header id = "header">
 			</br>
 			</br>
 			</br>
@@ -131,35 +137,25 @@
 	
 			<nav>
 				<div class = "left">
-					<a class = "white" href = "Learning HTML.html">Home</a>
+					<a class = "yellow" href = "Learning HTML.html">HOME</a>
 				</div>
 				
 				<div class = "right">
-					<a class = "white" href = "My Story.html">Background</a> 
-					<a class = "white" href = "#timeline">Timeline</a> 
-					<a class = "white" href = "Current Resume.pdf" target = "_blank">Resume</a>
+					<a class = "yellow" href = "My Story.html">ABOUT</a> 
+					<a class = "yellow" href = "#timeline">TIMELINE</a> 
+					<a class = "yellow" href = "Current Resume.pdf" target = "_blank">RESUME</a>
 				</div>
 			</nav>
 
 			<h1 class = "shadow">This page is dedicated to learning/re-learning HTML</h1>
 			<img id = "profilePic" src = "profile_pic.png" alt = "Profile Picture">
-	
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>	
-			</br>
-			</br>
-			</br>
-			</br>
-		
+			
+			<div class = "subheader">
+				<p>Imran Ilyas</p>
+				<p>University of California, Berkeley Undergraduate</p>
+				<p>Class of 2020</p>
+			</div>
+			
 		</header>
 
 		<h2>This will be the second time, hopefully this will make it so the third time will be faster LoL</h2>
@@ -312,7 +308,25 @@
 				<li>Added tons of break line elements. Side Note: See if there's a CSS way to remove all the break lines while keeping the same format</li>
 				<li>Moved h1 to the header</li>
 			</ul>
-						
+			
+			<p>Date: 02/15/2021</p>
+			<ul>
+				<li>Added profile picture</li>
+				<li>Resized picture and centered</li>
+				<li>Width 50% to make picture circular</li>
+				<li>Added border to picture</li>
+			</ul>
+			
+			<p>Date: 02/16/2021</p>
+			<ul>
+				<li>Commented out beach background - begins to repeat so went with solid color background</li>
+				<li>All CAPS the nav</li>
+				<li>Added subheader and css to it</li>
+				<li>Removed the breakline elements after the nav</li>
+				<li>Adjusted the height for the header such that it fits the container i.e. 100%</li>
+				<li>Should begin on working on the github.io and finishing the JS course</li>
+			</ul>
+			
 			</br>
 			
 		</div>
