@@ -1,7 +1,316 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-    <h1>Welcome to my webpage!<h1>
-  </body>
+	<head>
+		
+		<title>Imran Ilyas</title>
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+		
+		<style>
+			body, html{
+				height: 100%;
+				//width: 100%;
+				background-color: white;
+			}
+			
+			a{
+				text-decoration: none;
+			}
+			
+			nav{
+				font-family: arial;
+				font-weight: bold;
+				font-size: 18pt;
+				background-color: black;
+				position: fixed;
+				top: 0;
+				padding: 2% 8%;
+				width: 100%;
+				box-sizing: border-box;
+				word-spacing: 16px;
+				opacity: 0.8;
+			}
+			
+			#header{
+				//(beach)background: url("https://atlantis.nyc3.digitaloceanspaces.com/media/legacy/atlantis/Things_To_Do/Water_Park/Beaches/Hero/Experiences_Beach.jpg") center;
+				//(checkers)background: url("https://i.ytimg.com/vi/Lq6TQHm2z-4/maxresdefault.jpg") center;
+				background-color: #009070;
+				width: 100%;
+				top: 0;
+			}
+			
+			#profilePic{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius: 50%;
+				border: 6px solid white;
+				height: 275px;
+				weight: 250px;
+			}
+			
+			.subheader{
+				color: white;
+				font-size: 22pt;
+			}
+					
+			td, th{
+				border: 2px solid black;
+			}
+			
+			ul {
+				font-size: 14pt;
+			}
+			
+			#subfooter{
+				background-color: #303030;
+				height: 20%;
+			}
+			
+			footer{
+				text-align: center;
+				color: white;
+				background-color: black;
+				height: 10%;
+				padding: 2% 3%;
+				width: 100%;
+				box-sizing: border-box;
+			}
+			
+			.right{
+				float: right;
+			}
+			
+			.left{
+				float: left;
+			}
+			
+			.white{
+				color: white;
+			}
+			
+			#red{
+				color: red;
+			}
+			
+			#timeline{
+				font-family: 'Indie Flower', cursive;
+				padding-left: 20%;
+				padding-right: 20%;
+				width: 100%;
+				box-sizing: border-box;
+				background-color: gray;
+				color: white;
+			}
+			
+			#timeline > p{
+				font-size: 18pt;
+			}
+			
+			h1, h2{
+				text-align: center;
+				font-family: monospace;
+			}
+						
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<header id = "header">
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			
+			<nav>
+				<div class = "left">
+					<a class = "white" href = "index.html">HOME</a>
+				</div>
+				
+				<div class = "right">
+					<a class = "white" href = "My Story.html">ABOUT</a> 
+					<a class = "white" href = "#timeline">TIMELINE</a> 
+					<a class = "white" href = "Current Resume.pdf" target = "_blank">RESUME</a>
+				</div>
+			</nav>
+
+			<img id = "profilePic" src = "profile_pic.png" alt = "Profile Picture">
+			
+			<div class = "subheader">
+				<h1>Imran Ilyas</h1>
+				<h2>University of California, Berkeley Undergraduate</h2>
+				<h2>Class of 2020</h2>
+			</div>
+			
+			</br>
+			
+		</header>
+		
+		<div id = "about">
+			Add background and experience and link to github
+		</div>
+		
+		<div id = "contact">
+			Preffered form of communication is email, but phone number is in resume
+			Put contact information here (Email, LinkedIn)
+		</div>
+
+		<div id = "timeline">
+			
+			<h1>Timeline</h1>
+					
+			<p>Date: 01/13/2021</p>
+			<ul>
+				<li>Created new HTML file called Learning HTML</li>
+				<li>Made Unordered list and added footer semantic tag</li>
+			</ul>
+			
+			<p>Date: 01/14/2021</p>
+			<ul>
+				<li>Create table with attributes</li>
+			</ul>
+			
+			<p>Date: 01/15/2021</p>
+			<ul>
+				<li>Add h1, h2, h3 headers</li>
+				<li>Link YouTube video</li>
+			</ul>
+			
+			<p>Date: 01/17/2021</p>
+			<ul>
+				<li>Add ID to footer</li>
+				<li>Internal link to footer</li>
+				<li>Add align attribute to table</li>
+			</ul>
+			
+			<p>Date: 01/18/2021</p>
+			<ul>
+				<li>Finished HTML course</li>
+				<li>Embed Image</li>
+				<li>Tried to embed a video by using url but it looks like it needs to be saved locally?</li>
+			</ul>
+			
+			<p id = "red">If you're wondering about the hiatus, it was because of all that GCP stuff you were working on.</p>
+				
+			<p>Date: 01/22/2021</p>
+			<ul>
+				<li>Replace "Check" with Checkmark image</li>
+				<li>Added first style element: an ID selector to change the color to red</li>
+			</ul>
+			
+			<p>Date: 01/23/2021</p>
+			<ul>
+				<li>Parent-Child Selector between footer and paragraphs</li>
+			</ul>
+			
+			<h3 id = "congrats">CONGRATULATIONS ON FINISHING YOUR INTERNSHIP!!</h3>
+			
+			<p>Date: 01/30/2021</p>
+			<ul>
+				<li>Added background styling to the congrats paragraph above</li>
+			</ul>
+			
+			<p>Date: 02/01/2021</p>
+			<ul>
+				<li>Import custom font 'Indie Flower' and use on footer dates</li>
+			</ul>
+			
+			<p>Date: 02/02/2021</p>
+			<ul>
+				<li>Class selector added to header</li>
+				<li>Text Styling to header (align, transform, shadow)</li>
+				<li>Text Styling to congrats paragraph</li>				
+			</ul>
+			
+			<p>Date: 02/05/2021</p>
+			<ul>
+				<li>Added semantic header tag and linked another html page to it</li>
+				<li>Linked footer to the header and removed original paragraph that did the same thing</li>
+				<li>Added Resume and linked it in header</li>
+				<li>Added padding to header and word-spacing</li>
+				<li>Just found out commenting in CSS is /**/. I'm feeling pretty dumb right now</li>
+				<li>Removed text-decoration from links and changed default color to green</li>
+			</ul>
+			
+			<p>Date: 02/06/2021</p>
+			<ul>
+				<li>Added font-family: arial to header</li>
+				<li>Font-weight: bold to header</li>
+			</ul>
+			
+			<p>Date: 02/07/2021</p>
+			<ul>
+				<li>Switched original footer to div and use class selector for its style</li>
+				<li>New footer with style</li>
+				<li>Background-color to body is cream</li>
+				<li>Add parent-child selector (.timeline > p) so dates are larger</li>
+				<li>Padding to timeline div</li>
+				<li>Added clickable img that returns to first page and removed ugly first image</li>
+			</ul>
+			
+			<p>Date: 02/08/2021</p>
+			<ul>
+				<li>Finished CSS course</li>
+				<li>Removed header class and switched to direct element styling</li>
+				<li>Border styling on table</li>
+				<li>Should start thinking about positioning and fixing up the header</li>
+				<li>You can only link with id selectors (just a side note)</li>
+			</ul>
+			
+			<p>Date: 02/13/2021</p>
+			<ul>
+				<li>Fixed position of the nav element so it scrolls with page</li>
+				<li>Emptied header css</li>
+				<li>Changed color of nav anchors</li>
+				<li>Separated the css into divs for right and left side of nav</li>
+				<li>Added opacity and commented it out in case of further use for nav</li>
+				<li>(Later this night) Uncommented opacity and set it to darker see through</li>
+				<li>Increased font-size and padding</li>
+			</ul>
+			
+			<p>Date: 02/14/2021</p>
+			<ul>
+				<li>Removed name.png from repo</li>
+				<li>Linked beach image to the header in the html</li>
+				<li>Trying to get the beach image to be the background for a profile picture and name</li>
+				<li>Added tons of break line elements. Side Note: See if there's a CSS way to remove all the break lines while keeping the same format</li>
+				<li>Moved h1 to the header</li>
+			</ul>
+			
+			<p>Date: 02/15/2021</p>
+			<ul>
+				<li>Added profile picture</li>
+				<li>Resized picture and centered</li>
+				<li>Width 50% to make picture circular</li>
+				<li>Added border to picture</li>
+			</ul>
+			
+			<p>Date: 02/16/2021</p>
+			<ul>
+				<li>Commented out beach background - begins to repeat so went with solid color background</li>
+				<li>All CAPS the nav</li>
+				<li>Added subheader and css to it</li>
+				<li>Removed the breakline elements after the nav</li>
+				<li>Adjusted the height for the header such that it fits the container i.e. 100%</li>
+				<li>Should begin on working on the github.io and finishing the JS course</li>
+			</ul>
+			
+			</br>
+			
+		</div>
+		
+		<div id = "subfooter"></div>
+		
+		<footer>
+			Brought to you by Imran Ilyas. Last update: 02/18/2020
+		</footer>
+		
+	</body>
 </html>
