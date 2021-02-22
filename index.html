@@ -10,8 +10,8 @@
 		<style>
 			body, html{
 				height: 100%;
-				//background-color: white;
 				margin: 0;
+				background-color: #009070;
 			}
 			
 			a{
@@ -32,13 +32,8 @@
 				opacity: 0.8;
 			}
 			
-			#header{
-				//(beach)background: url("https://atlantis.nyc3.digitaloceanspaces.com/media/legacy/atlantis/Things_To_Do/Water_Park/Beaches/Hero/Experiences_Beach.jpg") center;
-				//(checkers)background: url("https://i.ytimg.com/vi/Lq6TQHm2z-4/maxresdefault.jpg") center;
-				background-color: #009070;
-			}
-			
 			#profilePic{
+				background-color: #009070;
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
@@ -46,32 +41,37 @@
 				border: 6px solid white;
 				height: 275px;
 				weight: 250px;
+				margin-top: 10%;
 			}
 			
 			.subheader{
 				color: white;
 				font-size: 22pt;
 			}
-					
-			td, th{
-				border: 2px solid black;
+			
+			#project{
+				background-color: white;
 			}
 			
-			ul {
-				font-size: 14pt;
+			#about{
+
 			}
 			
-			#timeline{
+			#contact{
 				font-family: 'Indie Flower', cursive;
 				padding-left: 20%;
 				padding-right: 20%;
 				box-sizing: border-box;
-				background-color: gray;
-				color: white;
+				background-color: white;
+				color: black;
 			}
 			
-			#timeline > p{
+			#contact > p{
 				font-size: 18pt;
+			}
+			
+			ul {
+				font-size: 14pt;
 			}
 						
 			#subfooter{
@@ -116,15 +116,7 @@
 	
 	<body>
 	
-		<header id = "header">
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
+		<header>
 			
 			<nav>
 				<div class = "left">
@@ -132,8 +124,9 @@
 				</div>
 				
 				<div class = "right">
-					<a class = "white" href = "My Story.html">ABOUT</a> 
-					<a class = "white" href = "#timeline">TIMELINE</a> 
+					<a class = "white" href = "#project">PROJECTS</a> 
+					<a class = "white" href = "#about">ABOUT</a> 
+					<a class = "white" href = "#contact">CONTACT</a> 
 					<a class = "white" href = "Current Resume.pdf" target = "_blank">RESUME</a>
 				</div>
 			</nav>
@@ -149,29 +142,24 @@
 			</br>
 			
 		</header>
-								</br>
-			</br>
-			</br>
-			</br>
-			</br>
-						</br>
-			</br>
-			</br>
-			</br>
-			</br>
-
 		
-		<div id = "about">
-			Add background and experience and link to github
+		<div id = "project">
+			Link to github. Put images and captions. Images can be clickable and show a larger view of the whole picture. The pic will be a sample of the project results
 		</div>
 		
+		<div id = "about">
+			Add background and experience and link to github, Add interests as well
+			<p>Hello, my name is Imran Ilyas. I recently graduated from UC Berkeley in August of 2020. Following my undergraduate studies, I
+			interned remotely full-time with start-up Next Capital Tech. as a Software Developer. I worked primarily using Python and OpenCV and along
+			with some Unity and C#. Unfortunately, I am not at liberty to say exactly what I did because of the NDA that I signed. The internship
+			concluded on January 31st, 2021. I elected to not re-sign as one of their Full-Time Software Developers to explore the market and
+			sharpen my own skills.</p>
+		</div>
+
 		<div id = "contact">
 			Preffered form of communication is email, but phone number is in resume
 			Put contact information here (Email, LinkedIn)
-		</div>
-
-		<div id = "timeline">
-			
+		
 			<h1>Timeline</h1>
 					
 			<p>Date: 01/13/2021</p>
