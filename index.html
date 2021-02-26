@@ -18,6 +18,11 @@
 				text-decoration: none;
 			}
 			
+			h1, h2{
+				text-align: center;
+				font-family: monospace;
+			}
+			
 			nav{
 				font-family: arial;
 				font-weight: bold;
@@ -30,6 +35,18 @@
 				box-sizing: border-box;
 				word-spacing: 16px;
 				opacity: 0.8;
+			}
+			
+			.right{
+				float: right;
+			}
+			
+			.left{
+				float: left;
+			}
+			
+			.white{
+				color: white;
 			}
 			
 			#profilePic{
@@ -47,6 +64,10 @@
 				font-size: 22pt;
 			}
 			
+			.underline{
+				line-height: 5px;
+			}
+			
 			#project{
 				background-color: white;
 				font-size: 22pt;
@@ -55,25 +76,28 @@
 			#about{
 				font-size: 22pt;
 				color: white;
+				height: auto;
+			}
+			
+			.column{
+				padding: 0 5%;
+				float: left;
+				width: 50%;
+				box-sizing: border-box;
+			}
+			
+			.row:after{
+				clear: both;
 			}
 			
 			#contact{
-				padding-left: 20%;
-				padding-right: 20%;
+				clear: both;
+				//padding-left: 25%;
+				//padding-right: 25%;
 				box-sizing: border-box;
 				background-color: white;
 				color: black;
 				font-size: 22pt;
-			}
-			
-			#phone{
-				height: 195px;
-				float: left;
-			}
-			
-			#email{
-				height: 200px;
-				float: right;
 			}
 			
 			#contact > p{
@@ -81,8 +105,14 @@
 				clear: both;
 			}
 			
-			ul {
-				font-size: 14pt;
+			#phone{
+				height: 200px;
+				float: left;
+			}
+			
+			#email{
+				height: 200px;
+				float: right;
 			}
 						
 			#subfooter{
@@ -99,32 +129,6 @@
 				width: 100%;
 				box-sizing: border-box;
 			}
-			
-			.right{
-				float: right;
-			}
-			
-			.left{
-				float: left;
-			}
-			
-			.white{
-				color: white;
-			}
-			
-			#red{
-				color: red;
-			}
-			
-			h1, h2{
-				text-align: center;
-				font-family: monospace;
-			}
-			
-			.underline{
-				line-height: 5px;
-			}
-			
 		</style>
 		
 	</head>
@@ -177,47 +181,44 @@
 			</br>
 		
 			<h1 class = "underline">About</h1>
-			<h2 class = "underline">______</h2>				
-
-			<p>Hello, my name is Imran Ilyas. I recently graduated from UC Berkeley in August of 2020. Following my undergraduate studies, I
-			interned remotely full-time with start-up Next Capital Tech. as a Software Developer. I worked primarily using Python and OpenCV along
-			with some Unity and C#. Unfortunately, I am not at liberty to explain exactly what I worked on and accomplished because of the NDA that I 
-			signed. The internship concluded on January 31st, 2021. I elected to not re-sign as one of their Full-Time Software Developers to explore 
-			the market and sharpen my own skills.</p>
+			<h2 class = "underline">______</h2>	
 			
-			<p>Currently, I have been taking courses with Revature to better my Web Development skills. However, I enjoy problem-solving the most. 
-			My first Computer Science undergraduate course was Problem-Solving/Problem Design with C++. Since then, I have been grinding to become
-			a Software Developer/Engineer. One of these days, I'd like to try my hand at game design, but that's for another time. If you would like
-			to connect with me, you may reach me through my <a href = "#contact">contact</a> below or through  
-			<a href = "https://www.linkedin.com/in/imran-ilyas/" target = "_blank">LinkedIn</a>.</p>
+			<div class = "row">
+				<div class = "column" style = "background-color: #25D366;">
+					<p>Hello, my name is Imran Ilyas. I recently graduated from UC Berkeley in August of 2020. Following my undergraduate studies, I
+					interned remotely full-time with start-up Next Capital Tech. as a Software Developer. I worked primarily using Python and OpenCV along
+					with some Unity and C#. Unfortunately, I am not at liberty to explain exactly what I worked on and accomplished because of the NDA that I 
+					signed. The internship concluded on January 31<sup style = "font-size: 12pt;">st</sup>, 2021. I elected to not re-sign as one of their 
+					Full-Time Software Developers to explore the market and sharpen my own skills.</p>
+				</div>
+				
+				<div class = "column" style = "background-color: #25D366;">
+					<p>Currently, I have been taking courses with Revature to better my Web Development skills. However, I enjoy problem-solving the most. 
+					My first Computer Science undergraduate course was Problem-Solving/Problem Design with C++. Since then, I have been grinding to become
+					a Software Developer/Engineer. One of these days, I'd like to try my hand at game design, but that's for another time.</p>
+					
+					<p>If you would like to connect with me, you may reach me through my <a href = "#contact">contact</a> below or through  
+					<a href = "https://www.linkedin.com/in/imran-ilyas/" target = "_blank">LinkedIn</a>.</p>
+				</div>
+			</div>
 			
 		</div>
 
 		<div id = "contact">
-			Preffered form of communication is email, but phone number is in resume
-			Put contact information here (Email, LinkedIn)
 			</br>
 			</br>
 		
 			<h1 class = "underline">Contact</h1>
 			<h2 class = "underline">_______</h2>
 			
-			<img id = "phone" src = "https://i.pinimg.com/originals/84/4e/8c/844e8cd4ab26c82286238471f0e5a901.png" alt = "Phone Call Icon">
-			<img id = "email" src = "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt = "GMail Icon">
+			<div style = "padding: 0 25%;">
+				<img id = "phone" src = "https://i.pinimg.com/originals/84/4e/8c/844e8cd4ab26c82286238471f0e5a901.png" alt = "Phone Call Icon" style = "float: left;">				
+				<img id = "email" src = "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt = "GMail Icon" style = "float: right;">
+			</div>
 			
-			<p>(310) 402-4398 imranilyas2416@berkeley.edu</p>
+			<p style = "text-align: center;">(310) 402-4398 <a href = "mailto: imranilyas2416@berkeley">imranilyas2416@berkeley.edu</a></p> 
 			<p>My preferred form of initial communication is through Email just because I feel I will be able get back to you sooner provided I miss your call.
 			However, feel free to call if it is easier for you.</p>
-			
-			<p>Date: 02/16/2021</p>
-			<ul>
-				<li>Commented out beach background - begins to repeat so went with solid color background</li>
-				<li>All CAPS the nav</li>
-				<li>Added subheader and css to it</li>
-				<li>Removed the breakline elements after the nav</li>
-				<li>Adjusted the height for the header such that it fits the container i.e. 100%</li>
-				<li>Should begin on working on the github.io and finishing the JS course</li>
-			</ul>
 			
 			</br>
 			
@@ -226,7 +227,7 @@
 		<div id = "subfooter"></div>
 		
 		<footer>
-			Brought to you by Imran Ilyas. Last update: 02/18/2020
+			Brought to you by Imran Ilyas. Last update: 02/25/2020
 		</footer>
 		
 	</body>
