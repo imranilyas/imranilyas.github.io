@@ -88,31 +88,30 @@
 			
 			.row:after{
 				clear: both;
+				display: table;
+				content: "";
 			}
 			
 			#contact{
 				clear: both;
-				//padding-left: 25%;
-				//padding-right: 25%;
 				box-sizing: border-box;
 				background-color: white;
 				color: black;
 				font-size: 22pt;
+				height: auto;
 			}
 			
 			#contact > p{
 				font-size: 18pt;
-				clear: both;
+				padding: 0 10%;
 			}
 			
 			#phone{
 				height: 200px;
-				float: left;
 			}
 			
 			#email{
 				height: 200px;
-				float: right;
 			}
 						
 			#subfooter{
@@ -211,14 +210,23 @@
 			<h1 class = "underline">Contact</h1>
 			<h2 class = "underline">_______</h2>
 			
-			<div style = "padding: 0 25%;">
-				<img id = "phone" src = "https://i.pinimg.com/originals/84/4e/8c/844e8cd4ab26c82286238471f0e5a901.png" alt = "Phone Call Icon" style = "float: left;">				
-				<img id = "email" src = "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt = "GMail Icon" style = "float: right;">
+			<div class = "row" style = "padding: 0 15%;">
+				<div class = "column" style = "text-align: center;">
+					<img id = "phone" src = "https://i.pinimg.com/originals/84/4e/8c/844e8cd4ab26c82286238471f0e5a901.png" alt = "Phone Call Icon">	
+					<p>Cell:
+					</br>
+					(310) 402-4398</p>
+				</div>
+				<div class = "column" style = "text-align: center;">
+					<img id = "email" src = "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt = "GMail Icon">
+					<p>Email:
+					</br>
+					<a href = "mailto: imranilyas2416@berkeley">imranilyas2416@berkeley.edu</a></p>
+				</div>
 			</div>
 			
-			<p style = "text-align: center;">(310) 402-4398 <a href = "mailto: imranilyas2416@berkeley">imranilyas2416@berkeley.edu</a></p> 
-			<p>My preferred form of initial communication is through Email just because I feel I will be able get back to you sooner provided I miss your call.
-			However, feel free to call if it is easier for you.</p>
+			<p>My preferred form of initial communication is through Email just because I feel I will be able get back to you sooner 
+			provided I miss your call. However, feel free to call if it is easier for you.</p>
 			
 			</br>
 			
@@ -227,7 +235,7 @@
 		<div id = "subfooter"></div>
 		
 		<footer>
-			Brought to you by Imran Ilyas. Last update: 02/25/2020
+			Brought to you by Imran Ilyas. Last update: 02/26/2020
 		</footer>
 		
 	</body>
