@@ -267,7 +267,8 @@
 				width: 25%;
 			}
 			
-			img.large{
+			img.large,
+			video.large{
 				height: 600px;
 			}
 
@@ -321,7 +322,7 @@
 				</div>
 			</nav>
 
-			<img id = "profilePic" src = "profile_pic.png" alt = "Profile Picture">
+			<img id = "profilePic" src = "Pictures/profile_pic.png" alt = "Profile Picture">
 			
 			</br>
 			
@@ -348,22 +349,22 @@
 			
 			<div class="row">
 				<div class="column">
-					<img src="java_algo.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					<img src="Pictures/java_algo.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
 				</div>
 				<div class="column">
-					<img src="java_console.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					<img src="Pictures/java_console.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
 				</div>
 				<div class="column">
-					<img src="spam_algo.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					<img src="Pictures/spam_algo.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
 				</div>
 				<div class="column">
-					<img src="spam_console.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+					<img src="Pictures/spam_console.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
 				</div>
 				<div class="column">
-					<img src="https://img.pokemondb.net/artwork/large/metagross.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+					<img src="Pictures/rocket_algo.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
 				</div>
 				<div class="column">
-					<img src="https://img.pokemondb.net/artwork/large/sharpedo-mega.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+					<img src="Pictures/rocket_game.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
 				</div>
 			</div>
 
@@ -373,32 +374,35 @@
 
 					<div class="mySlides">
 						<div class="numbertext">1 / 6</div>
-						<img class = "large" src="java_algo.png" style="width:100%">
+						<img class = "large" src="Pictures/java_algo.png" style="width:100%">
 					</div>
 
 					<div class="mySlides">
 						<div class="numbertext">2 / 6</div>
-						<img class = "large" src="java_console.png" style="width:100%">
+						<img class = "large" src="Pictures/java_console.png" style="width:100%">
 					</div>
 
 					<div class="mySlides">
 						<div class="numbertext" style = "color: white;">3 / 6</div>
-						<img class = "large" src="spam_algo.png" style="width:100%">
+						<img class = "large" src="Pictures/spam_algo.png" style="width:100%">
 					</div>
 					
 					<div class="mySlides">
 						<div class="numbertext" style = "color: white;">4 / 6</div>
-						<img class = "large" src="spam_console.png" style="width:100%">
+						<img class = "large" src="Pictures/spam_console.png" style="width:100%">
 					</div>
 					
 					<div class="mySlides">
-						<div class="numbertext">5 / 6</div>
-						<img class = "large" src="https://img.pokemondb.net/artwork/large/metagross.jpg" style="width:100%">
+						<div class="numbertext" style = "color: white;">5 / 6</div>
+						<img class = "large" src="Pictures/rocket_algo.png" style="width:100%">
 					</div>
 					
 					<div class="mySlides">
 						<div class="numbertext">6 / 6</div>
-						<img class = "large" src="https://img.pokemondb.net/artwork/large/sharpedo-mega.jpg" style="width:100%">
+						<video class = "large" controls poster = "Pictures/rocket_game.png" style="width:100%">
+							<source src="overwatch.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
 					</div>
 						
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -410,27 +414,27 @@
 
 					
 					<div class="full-column">
-						<img class="demo cursor" src="java_algo.png" style="width:100%" onclick="currentSlide(1)" alt="JavaProjects/AlphaString: Java Algorithm">
+						<img class="demo cursor" src="Pictures/java_algo.png" style="width:100%" onclick="currentSlide(1)" alt="JavaProjects/AlphaString: Java Algorithm">
 					</div>
 					
 					<div class="full-column">
-						<img class="demo cursor" src="java_console.png" style="width:100%" onclick="currentSlide(2)" alt="JavaProjects/AlphaString: Console View">
+						<img class="demo cursor" src="Pictures/java_console.png" style="width:100%" onclick="currentSlide(2)" alt="JavaProjects/AlphaString: Console View">
 					</div>
 					
 					<div class="full-column">
-						<img class="demo cursor" src="spam_algo.png" style="width:100%" onclick="currentSlide(3)" alt="Spam Filter: Algorithm">
+						<img class="demo cursor" src="Pictures/spam_algo.png" style="width:100%" onclick="currentSlide(3)" alt="Spam Filter: Algorithm">
 					</div>
 					
 					<div class="full-column">
-						<img class="demo cursor" src="spam_console.png" style="width:100%" onclick="currentSlide(4)" alt="Spam Filter: Test Run">
+						<img class="demo cursor" src="Pictures/spam_console.png" style="width:100%" onclick="currentSlide(4)" alt="Spam Filter: Test Run">
 					</div>
 					
 					<div class="full-column">
-						<img class="demo cursor" src="https://img.pokemondb.net/artwork/large/metagross.jpg" style="width:100%" onclick="currentSlide(5)" alt="Still in Development: Enjoy this Pokemon Metagross">
+						<img class="demo cursor" src="Pictures/rocket_algo.png" style="width:100%" onclick="currentSlide(5)" alt="Unity: Project Boost - Rocket Algorithm">
 					</div>
 					
 					<div class="full-column">
-						<img class="demo cursor" src="https://img.pokemondb.net/artwork/large/sharpedo-mega.jpg" style="width:100%" onclick="currentSlide(6)" alt="Still in Development: Enjoy this Pokemon Sharpedo">
+						<img class="demo cursor" src="Pictures/rocket_game.png" style="width:100%" onclick="currentSlide(6)" alt="Unity: Project Boost - Demo Video">
 					</div>
 				</div>
 			</div>
@@ -539,7 +543,7 @@
 		</div>
 		
 		<footer>
-			<p>Last update: 03/23/2021</p>
+			<p>Last update: 03/26/2021</p>
 		</footer>
 		
 	</body>
