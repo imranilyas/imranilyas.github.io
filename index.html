@@ -398,9 +398,9 @@
 					</div>
 					
 					<div class="mySlides">
-						<div class="numbertext">6 / 6</div>
-						<video class = "large" controls poster = "Pictures/rocket_game.png" style="width:100%">
-							<source src="Unity Rocket Trailer - Take 1.mp4" type="video/mp4">
+						<div class="numbertext" style = "color: white;">6 / 6</div>
+						<video id = "RocketVideo" class = "large" controls poster = "Pictures/rocket_game.png" style="width:100%">
+							<source src="Unity Rocket Trailer - Take 2.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
 					</div>
@@ -440,6 +440,13 @@
 			</div>
 			
 			<script>
+			//Video resets to 0 after finish
+			let RocketVideo = document.getElementById("RocketVideo");
+			RocketVideo.onended = function(){
+				RocketVideo.currentTime = 0;
+			};
+			
+			//lightbox JS
 			function openModal() {
 			  document.getElementById("myModal").style.display = "block";
 			}
